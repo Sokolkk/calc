@@ -1,0 +1,2 @@
+requerements
+PyQt5
