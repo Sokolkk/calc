@@ -1,5 +1,5 @@
-requerements
-PyQt5
+1. requerements PyQt5
 
 
-### задача бд https://www.kaggle.com/kehlank/pysqlpd
+
+2.  задача бд https://www.kaggle.com/kehlank/pysqlpd
