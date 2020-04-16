@@ -153,13 +153,13 @@ def equal():
 	isFirst = True;
 	if operator is not '' and exp1 is not'':
 		if operator=='+':
-			ui.lineEdit.setText(str(float(exp1) + float(ui.lineEdit.text()))); # do math
+			ui.lineEdit.setText(str(int(exp1) + int(ui.lineEdit.text()))); # do math
 			operator==''; # clear operator
 		elif operator=='-':
-			ui.lineEdit.setText(str(float(exp1) - float(ui.lineEdit.text()))); # do math
+			ui.lineEdit.setText(str(int(exp1) - int(ui.lineEdit.text()))); # do math
 			operator==''; # clear operator
 		elif operator=='*':
-			ui.lineEdit.setText(str(float(exp1) * float(ui.lineEdit.text()))); # do math
+			ui.lineEdit.setText(str(int(exp1) * int(ui.lineEdit.text()))); # do math
 			operator==''; # clear operator
 		elif operator=='/':
 			ui.lineEdit.setText(str(float(exp1) / float(ui.lineEdit.text()))); # do math
@@ -209,7 +209,7 @@ ui.btn_8.clicked.connect(btn_8)
 ui.btn_9.clicked.connect(btn_9)
 ui.btn_erase.clicked.connect(erase)
 ui.btn_equal.clicked.connect(equal)	
-ui.btn_mult.clicked.connect(mult)	
+ui.btn_mult.clicked.connect(mult)
 ui.btn_div.clicked.connect(div)	
 ui.btn_sub.clicked.connect(sub)	
 ui.btn_add.clicked.connect(add)	
