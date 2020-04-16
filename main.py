@@ -15,186 +15,186 @@ Form.show()
 # Globals
 operator = ''
 exp1 = ''
-isFirst = True; # first digit
+isFirst = True # first digit
 
 #Hook logic
 def btn_0():
-	global isFirst;
+	global isFirst
 	if not isFirst:
 		# if first digit is 0: do nothing
 		if ui.lineEdit.text() != '0':
-			ui.lineEdit.setText(ui.lineEdit.text() + str(0));
+			ui.lineEdit.setText(ui.lineEdit.text() + str(0))
 	else:
 		ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(0));
-		isFirst = False;
+		ui.lineEdit.setText(ui.lineEdit.text() + str(0))
+		isFirst = False
 
 def btn_1():
-	global isFirst;
+	global isFirst
 	if not isFirst:
 		# if first digit is 0 remove it
 		if ui.lineEdit.text() == '0':
 			ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(1));
+		ui.lineEdit.setText(ui.lineEdit.text() + str(1))
 	else:
 		ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(1));
-		isFirst = False;
+		ui.lineEdit.setText(ui.lineEdit.text() + str(1))
+		isFirst = False
 
 def btn_2():
-	global isFirst;
+	global isFirst
 	if not isFirst:
 		# if first digit is 0 remove it
 		if ui.lineEdit.text() == '0':
 			ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(2));
+		ui.lineEdit.setText(ui.lineEdit.text() + str(2))
 	else:
 		ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(2));
-		isFirst = False;
+		ui.lineEdit.setText(ui.lineEdit.text() + str(2))
+		isFirst = False
 
 def btn_3():
-	global isFirst;
+	global isFirst
 	if not isFirst:
 		# if first digit is 0 remove it
 		if ui.lineEdit.text() == '0':
 			ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(3));
+		ui.lineEdit.setText(ui.lineEdit.text() + str(3))
 	else:
 		ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(3));
-		isFirst = False;
+		ui.lineEdit.setText(ui.lineEdit.text() + str(3))
+		isFirst = False
 
 def btn_4():
-	global isFirst;
+	global isFirst
 	if not isFirst:
 		# if first digit is 0 remove it
 		if ui.lineEdit.text() == '0':
 			ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(4));
+		ui.lineEdit.setText(ui.lineEdit.text() + str(4))
 	else:
 		ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(4));
-		isFirst = False;
+		ui.lineEdit.setText(ui.lineEdit.text() + str(4))
+		isFirst = False
 
 def btn_5():
-	global isFirst;
+	global isFirst
 	if not isFirst:
 		# if first digit is 0 remove it
 		if ui.lineEdit.text() == '0':
 			ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(5));
+		ui.lineEdit.setText(ui.lineEdit.text() + str(5))
 	else:
 		ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(5));
-		isFirst = False;
+		ui.lineEdit.setText(ui.lineEdit.text() + str(5))
+		isFirst = False
 
 def btn_6():
-	global isFirst;
+	global isFirst
 	if not isFirst:
 		# if first digit is 0 remove it
 		if ui.lineEdit.text() == '0':
 			ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(6));
+		ui.lineEdit.setText(ui.lineEdit.text() + str(6))
 	else:
 		ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(6));
-		isFirst = False;
+		ui.lineEdit.setText(ui.lineEdit.text() + str(6))
+		isFirst = False
 
 def btn_7():
-	global isFirst;
+	global isFirst
 	if not isFirst:
 		# if first digit is 0 remove it
 		if ui.lineEdit.text() == '0':
 			ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(7));
+		ui.lineEdit.setText(ui.lineEdit.text() + str(7))
 	else:
 		ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(7));
-		isFirst = False;
+		ui.lineEdit.setText(ui.lineEdit.text() + str(7))
+		isFirst = False
 
 def btn_8():
-	global isFirst;
+	global isFirst
 	if not isFirst:
 		# if first digit is 0 remove it
 		if ui.lineEdit.text() == '0':
 			ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(8));
+		ui.lineEdit.setText(ui.lineEdit.text() + str(8))
 	else:
 		ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(8));
-		isFirst = False;
+		ui.lineEdit.setText(ui.lineEdit.text() + str(8))
+		isFirst = False
 
 def btn_9():
-	global isFirst;
+	global isFirst
 	if not isFirst:
 		# if first digit is 0 remove it
 		if ui.lineEdit.text() == '0':
 			ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(9));
+		ui.lineEdit.setText(ui.lineEdit.text() + str(9))
 	else:
 		ui.lineEdit.setText("")
-		ui.lineEdit.setText(ui.lineEdit.text() + str(9));
-		isFirst = False;
+		ui.lineEdit.setText(ui.lineEdit.text() + str(9))
+		isFirst = False
 
 def erase():
-	global operator;
-	global exp1;
-	global isFirst;
-	isFirst = True;
+	global operator
+	global exp1
+	global isFirst
+	isFirst = True
 	operator = ''
 	exp1 = ''
 	ui.lineEdit.setText("")
 
 def equal():
-	global operator;
-	global exp1;
-	global isFirst;
-	isFirst = True;
+	global operator
+	global exp1
+	global isFirst
+	isFirst = True
 	if operator is not '' and exp1 is not'':
 		if operator=='+':
-			ui.lineEdit.setText(str(int(exp1) + int(ui.lineEdit.text()))); # do math
-			operator==''; # clear operator
+			ui.lineEdit.setText(str(int(exp1) + int(ui.lineEdit.text()))) # do math
+			operator=='' # clear operator
 		elif operator=='-':
-			ui.lineEdit.setText(str(int(exp1) - int(ui.lineEdit.text()))); # do math
-			operator==''; # clear operator
+			ui.lineEdit.setText(str(int(exp1) - int(ui.lineEdit.text()))) # do math
+			operator=='' # clear operator
 		elif operator=='*':
-			ui.lineEdit.setText(str(int(exp1) * int(ui.lineEdit.text()))); # do math
-			operator==''; # clear operator
+			ui.lineEdit.setText(str(int(exp1) * int(ui.lineEdit.text()))) # do math
+			operator=='' # clear operator
 		elif operator=='/':
-			ui.lineEdit.setText(str(float(exp1) / float(ui.lineEdit.text()))); # do math
-			operator==''; # clear operator
+			ui.lineEdit.setText(str(float(exp1) / float(ui.lineEdit.text()))) # do math
+			operator=='' # clear operator
 
 def mult():
-	global operator;
-	global exp1;
-	operator='*';
-	exp1=ui.lineEdit.text();
-	global isFirst;
-	isFirst = True;
+	global operator
+	global exp1
+	operator='*'
+	exp1=ui.lineEdit.text()
+	global isFirst
+	isFirst = True
 def div():
-	global operator;
-	global exp1;
-	global isFirst;
-	isFirst = True;
-	operator='/';
-	exp1=ui.lineEdit.text();
+	global operator
+	global exp1
+	global isFirst
+	isFirst = True
+	operator='/'
+	exp1=ui.lineEdit.text()
 def sub():
-	global operator;
-	global exp1;
-	global isFirst;
-	isFirst = True;
-	operator='-';
-	exp1=ui.lineEdit.text();
+	global operator
+	global exp1
+	global isFirst
+	isFirst = True
+	operator='-'
+	exp1=ui.lineEdit.text()
 def add():
-	global operator;
-	global exp1;
-	global isFirst;
-	isFirst = True;
-	operator='+';
-	exp1=ui.lineEdit.text();
+	global operator
+	global exp1
+	global isFirst
+	isFirst = True
+	operator='+'
+	exp1=ui.lineEdit.text()
 def back():
-	ui.lineEdit.setText(ui.lineEdit.text()[:-1]);
+	ui.lineEdit.setText(ui.lineEdit.text()[:-1])
 
 # Connectors to functions	
 ui.btn_0.clicked.connect(btn_0)
